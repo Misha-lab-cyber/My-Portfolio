@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>My Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Misha Manimaran - Portfolio</title>
+  <meta name="description" content="The portfolio of Misha Manimaran, a software engineering intern and full-stack developer.">
+  <meta name="keywords" content="Misha Manimaran, portfolio, software engineer, full-stack developer, web developer, mobile developer">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -27,13 +27,74 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: FolioOne
-  * Template URL: https://bootstrapmade.com/folioone-bootstrap-portfolio-website-template/
-  * Updated: Aug 23 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    .skill-item.card {
+      background-color: var(--surface-color);
+    }
+    .skill-item.card h5 {
+      color: var(--heading-color);
+    }
+    .skill-item.card .text-muted {
+      color: var(--default-color) !important;
+    }
+    .navmenu .active {
+      color: #0d6efd !important; /* Dark Blue */
+      text-decoration: underline !important;
+      text-underline-offset: 8px !important;
+    }
+
+    
+.contact-item {
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-8px);
+}
+
+  .about-img img {
+  width: 100%;
+  max-width: 280px;    /* max size */
+  height: auto;
+  border-radius: 20px; /* rounded corners (or use 50% for circle) */
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* .contact-card {
+  background: #0f172a;
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  color: #fff;
+} */
+
+.contact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 170, 255, 0.2);
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  background: #00aaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-size: 24px;
+  color: white;
+}
+
+.btn i {
+  margin-right: 5px;
+}
+
+
+  </style>
 </head>
 
 <body class="index-page">
@@ -41,19 +102,13 @@
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/logo.webp" alt="">
-      <h1 class="sitename">FolioOne</h1> 
-    </a> -->
-
-    <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active" >Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Experience & Education</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -62,10 +117,8 @@
         <a href="https://instagram.com/iam_chubbygurl"><i class="bi bi-instagram"></i></a>
         <a href="https://wa.me/601111435862?text=Hi%2C%20I%20want%20to%20build%20a%20website%20for%20my%20business"><i class="bi bi-whatsapp"></i></a>
         <a href="https://www.linkedin.com/in/misha-manimaran-17125725b/"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/Misha-lab-cyber"><i class="bi bi-github"></i></a>
+        <a href="https://github.com/Misha-lab-cyber"><i class="bi bi-github"></i></a>
       </div>
-
-
 
     </div>
   </header>
@@ -74,78 +127,505 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4 align-items-center">
           <div class="col-lg-6 order-2 order-lg-1">
             <div class="hero-content">
               <h1 data-aos="fade-up" data-aos-delay="200">Hello, I'm <span class="highlight">Misha a/p Manimaran</span></h1>
-              <h2 data-aos="fade-up" data-aos-delay="300">Creative <span class="typed" data-typed-items="Web Developer, Software engineer, Full-Stack Developer,UI/UX Designer"></span></h2>
-                 
+              <h2 data-aos="fade-up" data-aos-delay="300">Creative <span class="typed" data-typed-items="Web Developer, Software Engineer, Full-Stack Developer, UI/UX Designer"></span></h2>
               <p class="lead">Motivated Information Technology undergraduate with strong hands-on experience in Java, mobile application development, and full-stack web development. Experienced in translating user requirements into system and mobile app designs, and building scalable applications using Java, JavaScript, HTML, CSS, Flutter, and REST APIs. Passionate about software engineering, problem solving, and contributing to innovative development teams.</p>
+             
+            </div>
+          </div>
 
-           
+             <div class="col-lg-6 about-img">
+                    <img src="assets/img/profile/MyPic.jpeg" class="img-fluid" alt="Misha Manimaran">
+                </div>
+        </div>
+      </div>
 
-              
-              <div class="hero-actions" data-aos="fade-up" data-aos-delay="500">
-                <a href="portfolio.html" class="btn btn-primary">View My Work</a>
-                <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+     
+
+    </section><!-- /Hero Section -->
+
+  
+
+<!-- About Section Starts -->
+
+    <section id="about" class="about section py-5"> 
+  <div class="container" data-aos="fade-up">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+
+        <div class="container section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>   A passionate developer focused on building impactful digital solutions.</p>
+      </div>
+
+     
+        <p>
+          I am an Information Technology undergraduate with a strong passion for software engineering, problem-solving, and creating user-focused applications. I specialize in developing scalable web and mobile solutions that deliver real value to users and businesses.
+        </p>
+
+        <p>
+          With hands-on experience in WordPress development, mobile app development using Flutter, and AI-enhanced systems, I enjoy transforming ideas into functional, efficient, and modern digital products.
+        </p>
+
+        <p>
+          My goal is to continuously grow as a developer, contribute to innovative teams, and build solutions that make a meaningful impact.
+        </p>
+
+        <a href="assets/resume/MISHA MANIMARAN RESUME.pdf" 
+           class="btn btn-primary mt-3 px-4" 
+           download>
+          Download Resume <i class="bi bi-download"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Experience & Education</h2>
+        <p>A summary of my professional experience and academic background.</p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="resume-item" data-aos="fade-up">
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-content">
+                <article class="education-item">
+                  <h4>Bachelor of Information Technology (Hons)</h4>
+                  <h5> 2026</h5>
+                  <p class="institution"><em>University of Selangor (UNISEL)</em></p>
+                  <p>Achievements: Dean's List, Academic Excellence Award, GPA: 3.90</p>
+                </article>
+                <article class="education-item">
+                  <h4>Foundation in Information Technology</h4>
+                  <h5>2023</h5>
+                  <p class="institution"><em>University of Selangor (UNISEL)</em></p>
+                  <p>Achievements: Dean's List, Academic Excellence Award, GPA: 3.90</p>
+                </article>
+          
+            <div class="resume-item" data-aos="fade-up">
+              <h3 class="resume-title">Project Experience</h3>
+ 
+              <div class="resume-content">
+                <article class="experience-item">
+                  <h4>Book Store Management System (Java – OOP Project)</h4>
+                  <p class="company"><em>University of Selangor</em></p>
+                  <ul>
+                    <li>Developed a Java-based application implementing core Object-Oriented Programming principles.</li>
+                    <li>Designed a modular system architecture following software engineering best practices and the SDLC.</li>
+                    <li>Implemented user authentication, inventory management, order processing, and payment handling.</li>
+                  </ul>
+                </article>
+
+
+ 
+                <article class="experience-item">
+                  <h4>Full-Stack Web Application</h4>
+                  <p class="company"><em>Portfolio Project</em></p>
+                  <ul>
+                    <li>Developed a full-stack web application using PHP, HTML, CSS, and MySQL.</li>
+                    <li>Implemented backend functionalities including form handling, authentication, and database operations.</li>
+                    <li>Designed a responsive frontend interface and applied CRUD operations for dynamic data management.</li>
+                  </ul>
+                </article>
+
+
+ 
+                <article class="experience-item">
+                  <h4>Student Supervision Management System</h4>
+                  <p class="company"><em>Academic Project</em></p>
+                  <ul>
+                    <li>Developed a desktop management system using C# and the .NET Framework integrated with a MySQL database.</li>
+                  </ul>
+                </article>
               </div>
-              <div class="social-links" data-aos="fade-up" data-aos-delay="600">
-                <a href="https://www.linkedin.com/in/misha-manimaran-17125725b/"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/Misha-lab-cyber"><i class="bi bi-github"></i></a>
+            </div><!-- End Projects Section -->
+
+
+
+
+
+
+
+
               </div>
             </div>
           </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <div class="hero-image" data-aos="zoom-in" data-aos-delay="300">
-              <div class="image-wrapper">
-                <img src="assets/img/profile/MyPic.jpeg" alt="Sarah Mitchell" class="img-fluid">
-                <div class="floating-elements">
-                  <div class="floating-card design" data-aos="fade-left" data-aos-delay="700">
-                    <i class="bi bi-palette"></i>
-                    <span>Design</span>
-                  </div>
-                  <div class="floating-card code" data-aos="fade-right" data-aos-delay="800">
-                    <i class="bi bi-code-slash"></i>
-                    <span>Code</span>
-                  </div>
-                  <div class="floating-card creativity" data-aos="fade-up" data-aos-delay="900">
-                    <i class="bi bi-lightbulb"></i>
-                    <span>Ideas</span>
-                  </div>
-                </div>
+          <div class="col-lg-6">
+            <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-content">
+               
+
+
+                <article class="experience-item">
+  <h4>Mobile Application Developer (AI-Enhanced Ordering System)</h4>
+  <h5>Oct 2025 – Mar 2026</h5>
+  <p class="company"><em>He & She Coffee Shop (UNISEL)</em></p>
+  <ul>
+    <li>Designed and developed a cross-platform mobile ordering application using Flutter.</li>
+    <li>Implemented a QR-based ordering system to streamline dine-in customer experience.</li>
+    <li>Integrated Firebase Authentication and Realtime Database for secure login and real-time data synchronization.</li>
+    <li>Developed AI-powered menu recommendation system based on user preferences and ordering behavior.</li>
+    <li>Implemented intelligent suggestion features to enhance user decision-making and engagement.</li>
+    <li>Built natural language ordering functionality, allowing users to place orders using conversational input.</li>
+    <li>Developed AI-driven order tracking system to provide real-time and predictive status updates.</li>
+    <li>Created an AI-supported admin dashboard for monitoring user activity, order patterns, and system insights.</li>
+    <li>Improved operational efficiency by reducing order processing time by approximately 40% through automation.</li>
+    <li>Conducted functional testing, debugging, and performance optimization to ensure system reliability.</li>
+    <li>Followed full Software Development Lifecycle (SDLC), including requirement analysis, system design, development, testing, and iteration.</li>
+  </ul>
+</article>
+
+
+
+               <article class="experience-item">
+  <h4>Web Developer</h4>
+  <h5>Sep 2024 – Apr 2025</h5>
+  <p class="company"><em>SRS Bid Solutions</em></p>
+  <ul>
+    <li>Independently designed, developed, and deployed the complete company website using WordPress.</li>
+    <li>Managed the full deployment lifecycle, including domain registration via Namecheap and hosting setup on GoDaddy.</li>
+    <li>Configured DNS settings and ensured successful website launch and accessibility.</li>
+    <li>Customized WordPress themes and plugins (e.g., Elementor) to create responsive, user-friendly layouts.</li>
+    <li>Implemented bid submission and approval workflows using plugin-based solutions.</li>
+    <li>Enhanced website functionality through integration of form builders, workflow tools, and content management features.</li>
+    <li>Optimized website performance using caching techniques, image optimization, and efficient plugin management.</li>
+    <li>Maintained website security through regular updates, backups, and plugin monitoring.</li>
+    <li>Improved user experience by refining navigation structure and ensuring mobile responsiveness.</li>
+    <li>Provided ongoing maintenance, troubleshooting, and technical support.</li>
+  </ul>
+</article>
+
+
+
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section><!-- /Resume Section -->
+
+
+       
+
+
+
+    
+
+
+            
+    <!-- Section Title -->
+
+
+
+<section id="Skills" class="contact section py-5">
+
+ <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p> A summary of the technical abilities, tools, and methodologies I use to build software solutions.</p>
+      </div>
+      
+
+<div class="container mb-5" data-aos="fade-up" data-aos-delay="100">
+
+  <div class="row g-4">
+
+    <!-- Programming Languages -->
+    <div class="col-md-6 col-lg-4">
+   <div class="skill-item card border-0 shadow-lg h-100 text-center p-4" style="background-color: var(--surface-color);">
+        <div class="icon-box mb-3">
+           <i class="bi bi-code-slash fs-1 text-primary"></i>
+          
+        </div>
+
+        <h5 class="fw-bold">Programming Languages</h5>
+
+        <p class="text-muted small">
+          Java, C#, JavaScript, Python, PHP, TypeScript, Dart, & SQL.
+        </p>
+
+        <div class="progress mt-3">
+          <div class="progress-bar bg-primary" style="width:85%"></div>
+        </div>
 
       </div>
+    </div>
 
-    </section><!-- /Hero Section -->
+    <!-- Frontend -->
+    <div class="col-md-6 col-lg-4">
+      <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+        <div class="icon-box mb-3">
+          <i class="bi bi-display fs-1 text-info"></i>
+        </div>
+
+        <h5 class="fw-bold">Frontend Development</h5>
+
+        <p class="text-muted small">
+          HTML5, CSS3, Bootstrap, React (Fundamentals), & Responsive Design.
+        </p>
+
+        <div class="progress mt-3">
+          <div class="progress-bar bg-info" style="width:80%"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="col-md-6 col-lg-4">
+      <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+        <div class="icon-box mb-3">
+          <i class="bi bi-server fs-1 text-success"></i>
+        </div>
+
+        <h5 class="fw-bold">Backend & API</h5>
+
+        <p class="text-muted small">
+          PHP, MySQL, REST API Integration, Authentication, & CRUD Operations.
+        </p>
+
+        <div class="progress mt-3">
+          <div class="progress-bar bg-success" style="width:75%"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="col-md-6 col-lg-4">
+      <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+        <div class="icon-box mb-3">
+          <i class="bi bi-phone fs-1 text-warning"></i>
+        </div>
+
+        <h5 class="fw-bold">Mobile Development</h5>
+
+        <p class="text-muted small">
+          Flutter, Firebase, Supabase, Android Studio, & Docker.
+        </p>
+
+        <div class="progress mt-3">
+          <div class="progress-bar bg-warning" style="width:70%"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Database -->
+    <div class="col-md-6 col-lg-4">
+      <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+        <div class="icon-box mb-3">
+          <i class="bi bi-database fs-1 text-danger"></i>
+        </div>
+
+        <h5 class="fw-bold">Database Technologies</h5>
+
+        <p class="text-muted small">
+          SQL (MySQL, MS SQL), Firebase/Supabase Realtime DB, & Relational Design.
+        </p>
+
+        <div class="progress mt-3">
+          <div class="progress-bar bg-danger" style="width:80%"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="col-md-6 col-lg-4">
+      <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+        <div class="icon-box mb-3">
+          <i class="bi bi-diagram-3 fs-1 text-secondary"></i>
+        </div>
+
+        <h5 class="fw-bold">Frameworks & Technologies</h5>
+
+        <p class="text-muted small">
+          Spring Boot, .NET, Node.js, React, RESTful APIs, & Hibernate.
+        </p>
+
+        <div class="progress mt-3">
+          <div class="progress-bar bg-secondary" style="width:75%"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="col-md-6 col-lg-4">
+      <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+        <div class="icon-box mb-3">
+      <i class="bi bi-tools fs-1 text-white"></i>
+        </div>
+
+        <h5 class="fw-bold">Development Tools</h5>
+
+        <p class="text-muted small">
+          VS Code, Android Studio, Git & GitHub, Firebase/Supabase Consoles, & AI-Assisted Tools.
+        </p>
+
+        <div class="progress mt-3">
+          <div class="progress-bar bg-dark" style="width:85%"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Software Engineering -->
+    <div class="col-md-6 col-lg-4">
+      <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+        <div class="icon-box mb-3">
+          <i class="bi bi-journal-check fs-1 text-primary"></i>
+        </div>
+
+        <h5 class="fw-bold">Software Engineering</h5>
+
+        <p class="text-muted small">
+          Agile, SDLC, Testing & Debugging, Requirement Analysis, & System Design.
+        </p>
+
+        <div class="progress mt-3">
+          <div class="progress-bar bg-primary" style="width:80%"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Coursework -->
+    <div class="col-md-6 col-lg-4">
+      <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+        <div class="icon-box mb-3">
+          <i class="bi bi-book fs-1 text-info"></i>
+        </div>
+
+        <h5 class="fw-bold">Relevant Coursework</h5>
+
+        <p class="text-muted small">
+          OOP, Data Structures & Algorithms, Software Engineering, Databases, Web & Mobile Dev.
+        </p>
+
+        <div class="progress mt-3">
+          <div class="progress-bar bg-info" style="width:90%"></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+  
+
+    </section>
+
+  
+
+
+
+<section id="contact" class="contact section py-5">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p> Feel free to reach out for any opportunities</p>
+      </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Location -->
+      <div class="col-md-6 col-lg-4">
+        <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+          <div class="icon-box mb-3">
+            <i class="bi bi-geo-alt fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-bold">Location</h5>
+          <p class="text-muted small">Selangor, Malaysia</p>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-md-6 col-lg-4">
+         <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+          <div class="icon-box mb-3">
+            <i class="bi bi-telephone fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-bold">Call Me</h5>
+          <p class="text-muted small">+60 11 1143 5862</p>
+        </div>
+      </div>
+
+
+
+
+      <!-- Email -->
+      <div class="col-md-6 col-lg-4">
+       <div class="skill-item card border-0 shadow-lg h-100 text-center p-4">
+          <div class="icon-box mb-3">
+            <i class="bi bi-envelope fs-1 text-primary"></i>
+          </div>
+          <h5 class="fw-bold">Email Me</h5>
+          <p class="text-muted small">mishhh1511@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Buttons -->
+    <div class="text-center mt-5">
+
+      <a href="https://wa.me/601111435862?text=Hi%2C%20I%20am%20interested%20in%20your%20services" 
+         class="btn btn-outline-success me-2" target="_blank">
+        <i class="bi bi-whatsapp"></i> WhatsApp
+      </a>
+
+      <a href="https://instagram.com/iam_chubbygurl" 
+         class="btn btn-outline-danger me-2" target="_blank">
+        <i class="bi bi-instagram"></i> Instagram
+      </a>
+
+      <a href="mailto:mishhh1511@gmail.com" 
+         class="btn btn-outline-primary">
+        <i class="bi bi-envelope"></i> Email
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
 
   </main>
 
   <footer id="footer" class="footer">
-
     <div class="container">
-   
       <div class="social-links d-flex justify-content-center">
-        <a href="https://instagram.com/iam_chubbygurl"><i class="bi bi-instagram"></i></a>
-        <a href="https://wa.me/601111435862?text=Hi%2C%20I%20want%20to%20build%20a%20website%20for%20my%20business"><i class="bi bi-whatsapp"></i></a>
+      
         <a href="https://www.linkedin.com/in/misha-manimaran-17125725b/"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/Misha-lab-cyber"><i class="bi bi-github"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        <!-- Designed by <a href="https://bootstrapmade.com/"> Misha mania</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a> -->
+        <a href="https://github.com/Misha-lab-cyber"><i class="bi bi-github"></i></a>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -156,12 +636,11 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min..js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
